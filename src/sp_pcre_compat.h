@@ -14,8 +14,8 @@
 #include "ext/pcre/pcrelib/pcre.h"
 #endif
 #else
-#define PCRE2_CODE_UNIT_WIDTH 8
-#include "pcre2.h"
+#include "php.h"
+#include "ext/pcre/php_pcre.h"
 #endif
 
 #define sp_pcre pcre2_code

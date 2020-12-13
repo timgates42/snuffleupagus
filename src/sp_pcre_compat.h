@@ -6,6 +6,8 @@
 
 #undef pcre_exec
 #undef pcre_compile
+#undef pcre_exec2
+#undef pcre_compile2
 
 #if HAVE_BUNDLED_PCRE
 #if PHP_VERSION_ID >= 70300

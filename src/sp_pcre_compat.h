@@ -16,8 +16,13 @@
 #include "ext/pcre/pcrelib/pcre.h"
 #endif
 #else
+#if PHP_VERSION_ID < 80000
+#define PCRE2_CODE_UNIT_WIDTH 8
+#include "pcre2.h"
+#else
 #include "php.h"
 #include "ext/pcre/php_pcre.h"
+#endif
 #endif
 
 #define sp_pcre pcre2_code
